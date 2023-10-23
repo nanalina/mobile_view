@@ -97,7 +97,6 @@ img{
 .pets_photogallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: black solid 2px;
     grid-gap: 10px;
     justify-content: center;
 }
