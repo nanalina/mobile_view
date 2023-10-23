@@ -1,0 +1,156 @@
+li{ 
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+nav{
+    border: 2px solid #483221;
+    background-color: #cfb095;
+    text-align: center;
+    padding: 15px;
+}
+
+nav li{
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#skip{
+    text-transform: uppercase;
+    padding: 15px;
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus{
+    left: 500px;
+}
+
+h2{
+    font-size: 25px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #483221;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 18px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #483221;
+    font-weight: 400;
+}
+
+body{
+    background-color: #fff8e7;
+    font-size: 13px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div{
+    line-height: 1.5;
+    padding: 15px;
+}
+
+img{
+    border: solid 2px #483221;
+}
+
+/* .buttonStyle{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #cfb095;
+    font-size: 15px;
+    background: #483221;
+    padding: 8px 15px 8px 15px;
+    text-decoration: none;
+}
+
+.buttonStyle:hover {
+    background: #785539;
+    text-decoration: none;
+  } */
+
+.current{
+    background-color: #483221;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.recipe_photogallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.pets_photogallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: black solid 2px;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.travel_photogallery{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.recipe_photogallery img{
+    display: inline;
+    animation: fade-in 2s ease-in;
+}
+
+.pets_photogallery img{
+    display: inline;
+    animation: fade-in 2s ease-in;
+}
+
+.travel_photogallery img{
+    display: inline;
+    animation: fade-in 2s ease-in;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media (prefers-reduced-motion: reduce) {
+    .recipe_photogallery img {
+        animation: none; 
+    }
+
+    .pets_photogallery img{
+        animation: none;
+    }
+
+    .travel_photogallery img{
+        animation: none;
+    }
+
+    .gif {
+        display: none; 
+    }
+}
+
