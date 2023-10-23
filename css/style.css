@@ -13,11 +13,13 @@ nav{
     border: 2px solid #483221;
     background-color: #cfb095;
     text-align: center;
+    padding: 15px;
 }
 
 nav li{
     display: inline;
     padding: 100px;
+    font-size: 20px;
 }
 
 #skip{
